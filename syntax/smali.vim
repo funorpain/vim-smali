@@ -87,7 +87,7 @@ syn region dalvikName matchgroup=dalvikNameWrapper start="L" end=";" oneline
 syn region dalvikString start=+"+ end=+"+
 
 " branch labels
-syn match dalvikLabel "\<[A-Za-z0-9_]\+\>:$"
+syn match dalvikLabel "\s:\<[A-Za-z0-9_]\+\>$"
 
 " registers
 syn match dalvikRegister "\<[vp]\d\+\>"
